@@ -1,0 +1,263 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Space Grotesk";
+  font-weight: 500;
+}
+
+p {
+  font-size: 18px;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.side {
+  height: 100%;
+  background: url(images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.front {
+  background: url(images/bg-card-front.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 245px;
+  width: 447px;
+  margin-left: 90px;
+  margin-top: 160px;
+  margin-bottom: 45px;
+  color: white;
+  position: absolute;
+}
+
+.frontinner {
+  margin: 25px;
+  position: relative;
+  top: 0;
+  height: 195px;
+  width: 397px;
+}
+
+.logo {
+  background: url(images/card-logo.svg);
+  height: 47px;
+  width: 84px;
+  margin-bottom: 75px;
+  margin-left: 15px;
+}
+
+.number {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.number p {
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.name {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 15px;
+  letter-spacing: 2px;
+}
+.back {
+  background: url(images/bg-card-back.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 180px;
+  height: 245px;
+  width: 447px;
+  color: white;
+  position: relative;
+  top: 55%;
+}
+
+.back p {
+  position: relative;
+  left: 350px;
+  top: 110px;
+  letter-spacing: 2px;
+}
+
+.form {
+  height: 100%;
+  width: 100%;
+  margin-left: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: hsl(278, 68%, 11%);
+  font-weight: 700;
+}
+
+.formelement {
+  height: 440px;
+  width: 440px;
+  background-color: white;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.input span {
+  font-size: 14px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.inputx span {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+input {
+  padding: 15px;
+
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid hsl(270, 3%, 87%);
+}
+
+input:hover {
+  cursor: pointer;
+}
+.inputx {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.inputx span {
+  margin-bottom: 10px;
+}
+.expiry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+}
+.content {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#cvc {
+  margin-top: 10px;
+}
+
+.inp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.inp input {
+  width: 45%;
+}
+
+::-webkit-input-placeholder {
+  color: hsl(270, 3%, 87%);
+  font-size: 18px;
+}
+
+.submit {
+  height: 60%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(270, 3%, 87%);
+  text-transform: capitalize;
+}
+
+.thank {
+  height: 0;
+  width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  visibility: hidden;
+}
+
+.logosvg {
+  height: 80px;
+  width: 80px;
+  background: url(images/icon-complete.svg);
+  margin: 25px;
+}
+
+.thank h2 {
+  color: hsl(278, 68%, 11%);
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.thank p {
+  color: hsl(279, 6%, 55%);
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 35px;
+  font-weight: 700;
+}
+
+.continue {
+  height: 15%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(270, 3%, 87%);
+  text-transform: capitalize;
+}
+
+.continue p {
+  margin-bottom: 0px;
+  color: hsl(270, 3%, 87%);
+  font-weight: 500;
+}
+
+.continue:hover,
+.submit:hover {
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+  border-color: hsl(278, 68%, 11%);
+}

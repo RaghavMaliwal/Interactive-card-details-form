@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <title>Interactive card details form</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="side">
+      <div class="front">
+        <div class="frontinner">
+          <div class="logo"></div>
+          <div class="number"><p>0000 0000 0000 0000</p></div>
+          <div class="name">
+            <p>Jane Appleseed</p>
+            <p>00/00</p>
+          </div>
+        </div>
+      </div>
+      <div class="back"><p>000</p></div>
+    </div>
+    <div class="form">
+      <div class="formelement">
+        <div class="input">
+          <span>Cardholder Name</span>
+          <input type="text" id="name" placeholder="e.g. Jane Appleseed" />
+        </div>
+        <div class="input">
+          <span>Card Number</span>
+          <input
+            type="text"
+            id="cardnumber"
+            placeholder="e.g. 1234 5678 9123 0000"
+          />
+        </div>
+        <div class="inputx">
+          <div class="expiry">
+            <div class="content">
+              <span>Exp. Date (MM/YY)</span>
+            </div>
+            <div class="inp">
+              <input id="month" type="number" placeholder="MM" />
+              <input id="year" type="number" placeholder="YY" />
+            </div>
+          </div>
+          <div class="cvc">
+            <span>CVC</span>
+            <input type="number" id="cvc" placeholder="e.g. 123" required />
+          </div>
+        </div>
+        <div class="submit"><p>Confirm</p></div>
+      </div>
+
+      <div class="thank">
+        <div class="logosvg"></div>
+        <h2>Thank you!</h2>
+        <p>We've added your card details</p>
+        <div class="continue"><p>Continue</p></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
